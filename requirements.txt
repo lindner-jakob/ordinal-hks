@@ -1,0 +1,3 @@
+# Needed only to regenerate the NumPy profiles in panels (c,d).
+# The size-study simulation and analysis need no Python packages.
+numpy==2.3.5

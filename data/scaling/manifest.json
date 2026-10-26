@@ -1,0 +1,58 @@
+{
+  "design": "density_scaling",
+  "n_values": [
+    250,
+    500,
+    1000,
+    2000,
+    4000,
+    8000,
+    16000,
+    32000
+  ],
+  "rho_values": [
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    35,
+    36,
+    38,
+    40
+  ],
+  "k_values": [
+    1,
+    5,
+    10,
+    25
+  ],
+  "median_control": true,
+  "repetitions_by_n": {
+    "250": 50,
+    "500": 50,
+    "1000": 50,
+    "2000": 50,
+    "4000": 50,
+    "8000": 50,
+    "16000": 30,
+    "32000": 20
+  },
+  "profile_generator": "std::mt19937_64; GCC libstdc++ uniform_real_distribution",
+  "activation_generator": "SplitMix64 with rejection sampling",
+  "master_seed_formula": "splitmix_hash(0x20261007 ^ fnv1a('density_scaling'))",
+  "compiler": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "bootstrap_seed": 20261008,
+  "bootstrap_repetitions": 2000,
+  "raw_runs": 29750,
+  "analysis_bootstrap_repetitions": 2000,
+  "analysis_seed": 20261008
+}
